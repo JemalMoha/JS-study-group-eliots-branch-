@@ -495,6 +495,33 @@
       console.log(myArray);
       var removedFromMyArray = myArray.pop();
       console.log(slice(myArray[1][0], 1));
+
+      // Manipulate Arrays With shift()
+      // Example
+      var ourArray = ["Stimpson", "J", ["cat"]];
+      var removedFromOurArray = ourArray.shift();
+      // removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
+
+      // Setup
+      var myArray = [["John", 23], ["dog", 3]];
+
+      // Only change code below this line.
+      var removedFromMyArray = myArray.shift();
+
+      // Manipulate Arrays With unshift()
+      // Example
+      var ourArray = ["Stimpson", "J", "cat"];
+      ourArray.shift(); // ourArray now equals ["J", "cat"]
+      ourArray.unshift("Happy");
+      // ourArray now equals ["Happy", "J", "cat"]
+
+      // Setup
+      var myArray = [["John", 23], ["dog", 3]];
+      myArray.shift();
+      console.log(myArray);
+      // Only change code below this line.
+      myArray.unshift(["Paul", 35]);
+      console.log(myArray);
     </script>
   </body>
 </html>
